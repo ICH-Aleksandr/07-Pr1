@@ -6,8 +6,8 @@ import TodoList from "../todoList";
 function TodosProviderComponent() {
   return (
     <TodosProvider>
-      <div>
-        <h2>Список дел</h2>
+      <div className={styles.container}>
+        <h2 className={styles.title}>Список дел</h2>
         <AddTodoForm />
         <TodoList />
       </div>
