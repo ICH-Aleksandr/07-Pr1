@@ -1,12 +1,11 @@
 import "./App.css";
-import MyProvider from "./components/myProvider";
-import { useContext } from "react";
+import TodosProviderComponent from "./components/todosProvider";
 
 function App() {
   return (
-    <MyProvider>
-      <TodosContext />
-    </MyProvider>
+    <div className="app">
+      <TodosProviderComponent />
+    </div>
   );
 }
 
